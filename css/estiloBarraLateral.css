@@ -1,0 +1,84 @@
+/* formato general */
+
+* {
+    box-sizing: content-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+
+/* Estilo de las Lista */
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+    position: absolute;
+    width: 98%;
+}
+
+
+/* Estilo ICONO menu */
+
+img {
+    width: 30px;
+}
+
+
+/* Estilo del imput */
+
+input[type="checkbox"] {
+    display: none;
+}
+
+
+/* estilo del fondo barra de menu */
+
+nav {
+    background-color: rgba(16, 16, 16, 0.5);
+    width: 300px;
+    height: 100%;
+    padding-top: 55px;
+    position: absolute;
+    top: 0;
+    left: -300px;
+    transition: all 0.5s;
+}
+
+
+/* Estilo al input para que aparezca la barra de menu*/
+
+input[type="checkbox"]:checked~nav {
+    transform: translateX(300px);
+}
+
+label {
+    padding: 15px;
+    position: absolute;
+    z-index: 1;
+    top: 1px;
+}
+
+a {
+    display: block;
+    padding: 10px;
+    color: white;
+    transition: 0.5s;
+}
+
+a:hover {
+    background-color: rgb(100, 164, 167, 0.5);
+    color: white;
+    font-size: 18px;
+}
+
+h1 {
+    text-align: center;
+}
+
+div img {
+    width: 100%;
+}
